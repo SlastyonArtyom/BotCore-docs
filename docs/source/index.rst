@@ -1,22 +1,36 @@
-Welcome to Lumache's documentation!
+Welcome to botcore documentation!
 ===================================
 
-**Lumache** (/lu'make/) is a Python library for cooks and food lovers
-that creates recipes mixing random ingredients.
-It pulls data from the `Open Food Facts database <https://world.openfoodfacts.org/>`_
-and offers a *simple* and *intuitive* API.
+.. warning:: Documentation not complete.
+    For example at this moment not documented exceptions.
+    JSDoc is used in the code.
+
+**BotCore** is a Discord bot framework written with Discord.js.
+
+BotCore currently have this features:
+
+* Modules system
+* Package repository (unstable)
+* CLI
+
+Planned features:
+
+* Web dashboard
+* Custom templates (for disabled commands, errors, etc)
+* Full localization support
+* Slash commands
+
 
 Check out the :doc:`usage` section for further information, including
-how to :ref:`installation` the project.
-
-.. note::
-
-   This project is under active development.
+how to :ref:`install <installation>` the project.
 
 Contents
 --------
 
 .. toctree::
 
+   architecture/index
    usage
-   api
+   cli
+   pkg
+   api/index

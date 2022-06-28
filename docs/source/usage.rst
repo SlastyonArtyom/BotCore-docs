@@ -6,29 +6,58 @@ Usage
 Installation
 ------------
 
-To use Lumache, first install it using pip:
+To use BotBore, first clone with git:
 
 .. code-block:: console
 
-   (.venv) $ pip install lumache
+    $ git clone https://github.com/Tenorium/BotCore.git
 
-Creating recipes
-----------------
 
-To retrieve a list of random ingredients,
-you can use the ``lumache.get_random_ingredients()`` function:
+Then move into cloned repository and install dependencies:
 
-.. autofunction:: lumache.get_random_ingredients
+.. code-block:: console
 
-The ``kind`` parameter should be either ``"meat"``, ``"fish"``,
-or ``"veggies"``. Otherwise, :py:func:`lumache.get_random_ingredients`
-will raise an exception.
+	$ npm install
 
-.. autoexception:: lumache.InvalidKindError
+Rename config example from :file:`config/core.config.js.example` to :file:`config/core.config.js`.
 
-For example:
+.. _configuration:
 
->>> import lumache
->>> lumache.get_random_ingredients()
-['shells', 'gorgonzola', 'parsley']
+Configuration
+--------------
 
+Main config file is :file:`config/core.config.js`
+
+Config fields:
+
+.. _loggerOptions:
+
+logger
+    Logger options.
+
+    debug
+        :type: Boolean
+        Enable debug mode
+    dateformat
+        :type: String
+        Compatible with `moment.js <https://momentjs.com/docs/#/displaying/format/>`_ date format
+client
+    `Options <https://discord.js.org/#/docs/discord.js/13.6.0/typedef/ClientOptions>`_ for Discord.JS client
+locale
+    :values: "ru","en"
+    Locale used by botcore.
+token
+    Discord bot token
+prefix
+    Prefix for commands
+
+Starting
+--------
+
+For start bot run next command:
+
+.. code-block:: console
+
+    $ npm run bot
+
+After starting you can see logs and :doc:`cli` prompt.
