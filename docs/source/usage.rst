@@ -6,20 +6,11 @@ Usage
 Installation
 ------------
 
-To use BotBore, first clone with git:
+To install BotCore in current directory, run this command:
 
 .. code-block:: console
 
-    $ git clone https://github.com/Tenorium/BotCore.git
-
-
-Then move into cloned repository and install dependencies:
-
-.. code-block:: console
-
-	$ npm install
-
-Rename config example from :file:`config/core.config.js.example` to :file:`config/core.config.js`.
+    $ wget -O - https://tenorium.github.io/BotCore-install/install.js | node
 
 .. _configuration:
 
