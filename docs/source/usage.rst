@@ -6,11 +6,13 @@ Usage
 Installation
 ------------
 
-To install BotCore in current directory, run this command:
+To install BotCore clone repository and install dependencies:
 
 .. code-block:: console
 
-    $ wget -O - https://tenorium.github.io/BotCore-install/install.js | node
+    $ git clone https://github.com/Tenorium/BotCore
+    $ cd BotCore
+    $ npm i
 
 .. _configuration:
 
